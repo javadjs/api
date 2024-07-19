@@ -14,6 +14,7 @@ const App = () => {
       <MainContext.Provider value={{showmenu, setshowmenu}}>
         <Sidebar />
         <Content />
+        <h2>javad</h2>
       </MainContext.Provider>
     </div>
   );
