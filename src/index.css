@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.active_bar li{
+  background-color: #e8e8e860 !important;
+  color: black;
+}

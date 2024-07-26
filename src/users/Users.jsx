@@ -2,8 +2,9 @@ import React from "react";
 import style from "../style.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Users = () => {
+  const navigate = useNavigate();
   return (
     <div className={`${style.item_content} mt-5 p-4 container-fluid`}>
       <h4 className="text-center">مدیریت کاربران</h4>
@@ -16,11 +17,14 @@ const Users = () => {
           />
         </div>
         <div className="col-2 text-start px-0">
-          <Link to={"/user/add"}>
-            <button className="btn btn-success">
-              <FontAwesomeIcon icon={faPlus} />
-            </button>
-          </Link>
+          <button
+            className="btn btn-success"
+            onClick={() => {
+              navigate("/user/add");
+            }}
+          >
+            <FontAwesomeIcon icon={faPlus} />
+          </button>
         </div>
       </div>
       <table className="table bg-light shadow">

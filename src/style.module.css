@@ -40,6 +40,9 @@ th {
   max-width: 75px;
   border-radius: 50%;
 }
+.sidebar_list{
+  padding:0;
+}
 .sidebar_list li {
   padding: 0.3rem 1rem;
   transition: all 300ms ease;
@@ -48,6 +51,8 @@ th {
   padding: 0.3rem 1rem;
   background: #ebe6e681;
 }
+
+
 
 /* content section  */
 .content_section {
@@ -67,6 +72,7 @@ th {
   z-index: 1000;
   cursor: pointer;
   font-size: 1.5rem;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -79,7 +85,12 @@ th {
   .sidebar_section.active {
     right: 0;
   }
+.menu_button{
+  display: inline-block;
 }
+}
+
+
 
 /* users content ----------- */
 
@@ -101,7 +112,7 @@ th {
 .contents .form_contents {
   width: 60%;
   height: 470px;
-  background-color: #f0eeff;
+  background-color: #f4f4f4;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -131,6 +142,7 @@ th {
   -ms-border-radius:8px ;
   -o-border-radius:8px ;
  margin-right:5px ;
+ margin-top:.5rem ;
   border: none;
   font-size:0.9rem ;
   cursor: pointer;
