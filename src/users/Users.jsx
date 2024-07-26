@@ -2,6 +2,7 @@ import React from "react";
 import style from "../style.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const Users = () => {
   return (
     <div className={`${style.item_content} mt-5 p-4 container-fluid`}>
@@ -15,9 +16,11 @@ const Users = () => {
           />
         </div>
         <div className="col-2 text-start px-0">
-          <button className="btn btn-success">
-            <FontAwesomeIcon icon={faPlus} />
-          </button>
+          <Link to={"/user/add"}>
+            <button className="btn btn-success">
+              <FontAwesomeIcon icon={faPlus} />
+            </button>
+          </Link>
         </div>
       </div>
       <table className="table bg-light shadow">
@@ -33,14 +36,16 @@ const Users = () => {
         <tbody>
           <tr>
             <td>1</td>
-            <td>qasem</td>
-            <td>qasemB</td>
-            <td>mahdicmptr@gmail.com</td>
+            <td>javad</td>
+            <td>javadjs</td>
+            <td>javad@gmail.com</td>
             <td>
-              
-              <i className=" text-warning mx-2 pointer ">
-              <FontAwesomeIcon icon={faEdit} />
-              </i>
+              <Link to={"add/2"}>
+                <i className=" text-warning mx-2 pointer ">
+                  <FontAwesomeIcon icon={faEdit} />
+                </i>
+              </Link>
+
               <i className=" text-danger mx-2 pointer ">
                 <FontAwesomeIcon icon={faTrash} />
               </i>

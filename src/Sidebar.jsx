@@ -22,11 +22,9 @@ const Sidebar = () => {
           <Link to="/post">پست‌ها</Link>
         </li>
         <li>
-        
           <Link to="/gallery">گالری</Link>
         </li>
         <li>
-     
           <Link to="/todo">کارها</Link>
         </li>
       </ul>
